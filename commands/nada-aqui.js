@@ -3,17 +3,17 @@ const path = require("node:path");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("lupa")
-    .setDescription("Chegue mais perto"),
+    .setName("nada")
+    .setDescription("Será que tem algo aqui????"),
 
   async execute(interaction) {
     try {
-      const imagePath = path.join(__dirname, "..", "assets", "aranhobot.jpg");
+      const imagePath = path.join(__dirname, "..", "assets", "nada-aqui.png");
       await interaction.reply({
-        content: "🕸 O-olá...    não chegue muito perto...",
+        content: "Acho que não tinha **NADA** aqui...",
         files: [{
           attachment: imagePath,
-          name: 'aranhobot.jpg'
+          name: 'nada-aqui.jpg'
         }]
       });
     } catch (error) {
